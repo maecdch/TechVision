@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-tech-bg: #0a0a0a;
+  --color-tech-grid: #1a1a1a;
+  --color-tech-accent: #00ff9d; /* Neon Green */
+  --color-tech-secondary: #00d2ff; /* Cyan */
+}
+
+body {
+  background-color: var(--color-tech-bg);
+  color: #e5e5e5;
+  font-family: var(--font-sans);
+}
+
+.tech-grid {
+  background-image: 
+    linear-gradient(var(--color-tech-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-tech-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+}
+
+.glass-panel {
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
